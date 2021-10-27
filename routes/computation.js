@@ -13,9 +13,10 @@ router.get('/', function(req, res, next) {
             vl=Math.round(Math.random()*1000);
         }
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('Math.imul() applied to ' + vl + ' is ' + Math.imul(vl))
-        res.write('<br/>Math.log() applied to ' + vl + ' is ' + Math.log(vl))
-        res.write('<br/>Math.log10() applied to ' + vl + ' is ' + Math.log10(vl))
+        res.write('Math.acosh() applied to ' + vl + ' is ' + Math.acosh(vl))
+        res.write('<br/>Math.log1p() applied to ' + vl + ' is ' + Math.log1p(vl))
+        res.write('<br/>Math.tan() applied to ' + vl + ' is ' + Math.tan(vl))
+        res.write('<br/>Math.sqrt() applied to ' + vl + ' is ' + Math.sqrt(vl))
         res.end()
       }
 });
